@@ -40,7 +40,8 @@ Vue.component('inner_body', {
                 <img id="portrait" src="./img/others/Erik.jpg" alt="portrait">
         </div>
         <div id="portrait-text">
-                Since childhood I was always interested in programming thanks to how much my father liked it and that was what made me start doing small things with code with him until I was 10 years old. After that I became interested in design, since I had friends who drew very well and always tried to capture ideas with silly drawings that I would like and they recreated what I showed them. With 17 years I went to a couple of programming courses in which I learned to use Construct 2 and a little bit of Unity. Finally, I finished at ESNE (University School of Design, Innovation and Technology), where I am training continuing with what I have already learned. Here, apart from still liking programming and design, I have developed a certain interest in production, since I find it a certain attraction to organize documents and excels.
+                I started my programming study path with Pascal at the age of 16, writting my first calculator. Then I quickly switched to Python and leaving it behind once I started Software Engineering at the same time I discovered C++. At the end of the year I quit university because it wasn't fulfilling enough (assembly language might be the reason why) so I studied 2 years of vocational education where I learnt Java, Android, SQL and much more.
+                There was a vital change in my life when the final degree project came and I decided to make a game with Unity. After several months of research and development the project in mind was so huge I had to give it up. So, my final project turned into a private Ethereum network using containers, thanks to everything I learnt during my internship at UST Global. The experience I had with Unity was the key to know that I wanted to be a game programmer. Currently I am studying at ESNE (University School of Design, Innovation and Technology).
         </div>
        
          </section>
@@ -122,7 +123,7 @@ Vue.component('inner_body', {
     <h2 id="title_letters_left">Current Projects</h2>
     <div class="emptydiv"></div>
     <figure>
-            <img src="./img/games/Bloodmask.png" alt="Bloodmask">
+            <img src="./img/games/Bloodmask.png" width="823" height="569" alt="Bloodmask">
     </figure>
     <p>Currently working on a single player adventure rpg campaign in a devastated medieval world. 
     Inspired by the Dark Souls series atmosphere and the engaging gameplay of the Pokemon series.</p>
@@ -244,27 +245,50 @@ Vue.component('inner_body', {
 
 Vue.component('bottom', {
     template: `
-<footer>
-<div>
-            <p>Erik Mateos Morcillo</p>
-            <p>28033 Madrid</p>
-        </div>
-        <div>
-        <a href="https://github.com/Kiremate/" target="_blank" title="git">
-        <i class="fab fa-linkedin"></i>
-        </a>
+    <footer id="footer">
+    <div>
+        <p>Erik Mateos Morcillo</p>
+        <p>28033 Madrid</p>
+
+
+            <a href="https://github.com/Kiremate/" target="_blank" title="git">
+            <img src="./img/others/github-logo.png" width="120" height="80" alt="linkedin">
+            </a>
+        
             <a href="https://www.linkedin.com/in/erik-mateos-57102b162/" target="_blank" title="Link">
-                <i class="fab fa-linkedin"></i>
-                </a>
-            <a href="https://www.google.com/intl/es/gmail/about/" target="_blank" title="My mail is: kiremate@hotmail.com">
-                <i class="fas fa-envelope"></i> 
-                </a>
-                <a href="https://bloodmask-official.itch.io/" target="_blank" title="Take a look"><i class="fab fa-itch-io"></i> 
-                </a>
-        </div>
+            <img src="./img/others/linkedin-logo.png" width="80" height="80" alt="linkedin">
+            
+            </a>
+
+            <a href="https://bloodmask-official.itch.io/" target="_blank" title="Take a look">
+            <img src="./img/others/ItchioLogo.png"  width="80" height="80" alt="Itch.io">
+            </a>
+    </div>
 </footer>
     `
 })
+
+Vue.component('footer-style',{
+    template:`
+     <div id="container">
+      <div id="contacts">
+        <div id="contacts--contact">
+          <p>{{ mail }}</p>
+          <p>{{ phone }}</p>
+        </div>
+        <div id="contacts--social">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+      <div id="mentions">
+        <p>{{ mention }}</p>
+      </div>
+     </div>
+    `,
+    
+  });
 
 var app = new Vue({
     el: '#port'
