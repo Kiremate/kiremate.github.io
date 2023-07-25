@@ -4,7 +4,7 @@ const TopComponent = {
     <header>
         <section id="heading">
             <h2>Erik Mateos Morcillo</h2>
-            <h3>Gamedev programmer</h3>
+            <h3>Videogame programmer</h3>
         </section>
         <section id="nav-bar" class="col-sm-12">
             <ul>
