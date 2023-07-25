@@ -133,6 +133,7 @@ p {
     font-size: 20px;
     line-height: 1.5;
     color: rgb(0, 0, 0);
+    font-weight: bold;
     margin: 0.5em 0;
     max-width: 800px;
     margin: 0.5em auto;
