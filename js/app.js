@@ -167,9 +167,7 @@ const RecentProjects = {
                 {
                     type: "slider",
                     images: [
-                        { src: "/img/games/Bloodmask.png"},
-                        { src: "/img/games/Agoris_2_23.jpg" },
-                        { src: "/img/games/Vial_bloodmask5.jpg" }
+                        { src: "/img/games/Bloodmask.png"}
                     ],
                     description: "A dark fantasy RPG set in a world cyclically wiped clean by the fearsome Blood Dragon. Players navigate the remnants of fallen civilizations, uncovering secrets and relics, all while managing their own life essence through the Mask Affinity System. Bond with masks that offer unique abilities but drain your life force, interact with various factions, and ultimately face the Blood Dragon in an epic showdown. An enthralling mix of traditional RPG mechanics and innovative gameplay elements. Crafted with Unreal Engine 5",
                     role: "This is a huge project and still being developed, I am the Game Director collaborating with a team of 8 gamedevs, managing the team and the tasks and reasure we are all in the same page, as well as programming of course."
@@ -207,8 +205,6 @@ const RecentProjects = {
         <div class="media carousel slide" :class="{ 'last-slider': index === games.length - 1 }" id="carouselExampleIndicators" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
             </ol>
             <div class="carousel-inner">
                 <div v-for="(image, imgIndex) in game.images" :class="{ 'carousel-item': true, 'active': imgIndex === 0 }">
